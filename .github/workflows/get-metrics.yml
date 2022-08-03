@@ -1,4 +1,4 @@
-name: Daily 360 metrics report
+name: (TEST) Daily 360 metrics report
 
 on:
   schedule:
@@ -9,7 +9,8 @@ on:
     #        │ │ ┌────────── day (month)
     #        │ │ │ ┌──────── month
     #        │ │ │ │ ┌────── day (week)
-    - cron: '0 22 * * *'
+    # - cron: '0 22 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       fromdate:
