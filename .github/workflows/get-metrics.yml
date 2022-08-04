@@ -32,6 +32,6 @@ jobs:
         uses: nicklegan/github-org-repo-metrics-action@v1.0.2
         with:
           token: ${{ secrets.ORG_TOKEN }}
-          days: 1
+          days: 3
           fromdate: ${{ github.event.inputs.fromdate }} # Used for workflow dispatch input
           todate: ${{ github.event.inputs.todate }} # Used for workflow dispatch input
