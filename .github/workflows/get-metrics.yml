@@ -9,8 +9,7 @@ on:
     #        │ │ ┌────────── day (month)
     #        │ │ │ ┌──────── month
     #        │ │ │ │ ┌────── day (week)
-    # - cron: '0 22 * * *'
-    - cron: '0 * * * *'
+    - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
       fromdate:
@@ -32,6 +31,6 @@ jobs:
         uses: nicklegan/github-org-repo-metrics-action@v1.0.2
         with:
           token: ${{ secrets.ORG_TOKEN }}
-          days: 3
+          days: 1
           fromdate: ${{ github.event.inputs.fromdate }} # Used for workflow dispatch input
           todate: ${{ github.event.inputs.todate }} # Used for workflow dispatch input
