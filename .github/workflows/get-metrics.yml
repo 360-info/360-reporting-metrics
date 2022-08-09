@@ -1,4 +1,4 @@
-name: (TEST) Daily 360 metrics report
+name: 360 metrics report
 
 on:
   schedule:
