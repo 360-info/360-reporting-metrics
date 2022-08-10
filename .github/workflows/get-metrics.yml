@@ -30,6 +30,7 @@ jobs:
       - name: Get organization repository metrics
         uses: nicklegan/github-org-repo-metrics-action@v1.0.2
         with:
+          org: 360-info
           token: ${{ secrets.ORG_TOKEN }}
           days: 1
           fromdate: ${{ github.event.inputs.fromdate }} # Used for workflow dispatch input
