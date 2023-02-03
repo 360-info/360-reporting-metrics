@@ -25,10 +25,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get organization repository metrics
-        uses: nicklegan/github-org-repo-metrics-action@v1.0.2
+        uses: nicklegan/github-org-repo-metrics-action@v2.0.1
         with:
           org: 360-info
           token: ${{ secrets.ORG_TOKEN }}
